@@ -3,7 +3,7 @@ const cors = require("cors");
 const fruitsApp = express();
 const fruitRoutes = require("./routes/fruitRoutes");
 
-application.use(cors());
+fruitsApp.use(cors());
 
 fruitsApp.use(express.json()); // any http method
 fruitsApp.use("/fruits", fruitRoutes);
